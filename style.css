@@ -1,0 +1,200 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root{
+  /* Primary colours */
+
+  --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+
+  /* Background gradient */
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+
+  /* Text */
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+
+  font-size: 12px;
+
+}
+
+body{
+  font-family: "kumbh", sans-serif;
+  height: 100vh;
+  background: var(--soft-blue);
+  background: linear-gradient(var(--soft-violet), var(--soft-blue));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.wrapper{
+  height: 70%;
+  width: 70%;
+  background-color: white;
+  display: flex;
+  border-radius: 30px/30px;
+  position: relative;
+}
+
+.banner{
+  min-width: 50%;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.banner .lines{
+  position: absolute;
+  top: -70%;
+  right: 17%;
+}
+
+.box{
+  height: 26.5%;
+  width: 12.5%;
+  position: absolute;
+  right: 78.5%;
+  top: 38%;
+  z-index: 2;
+}
+
+.banner .illustration{
+  height: 70%;
+  width: 98%;
+  position: absolute;
+  top: 10%;
+  right: 17%;
+
+}
+
+.right{
+  margin-top: 5% ;
+}
+
+.content{
+  margin-right: 15%;
+}
+.faq{
+  margin-top: 20px;
+  transition: max-height 5s;
+  
+}
+
+.faq span{
+  margin-right: 10px;
+}
+
+
+.faq .open-p{
+  position: relative;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+
+.answers{
+  margin: 5px 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.open{
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.the-question p{
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.arrow-icon{
+  position: absolute;
+  right:0;
+}
+
+.open-button{
+  position: absolute;
+  right:0;
+  transform: rotate(180deg);
+}
+
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: red
+}
+
+@media screen and (max-width: 800px) {
+
+  body{
+    height: 1000px;
+    justify-content: unset;
+    
+  }
+
+  body .box{
+    height: 0;
+    width: 0;
+  }
+
+  .wrapper{
+    flex-direction: column;
+    margin-top: 180px;
+    height: 500px;
+    max-width: 500px;
+    min-width: 350px;
+    width: 90%;
+    
+  }
+
+  .banner{
+    height: 20%;
+    overflow: visible;
+    text-align: center;
+  }
+
+  .banner .illustration{
+    position: relative;
+    height: auto;
+    width: 300px;
+    top: -232%;
+    right: 5%;
+    z-index: 3;
+  
+  }
+
+  .banner .lines{
+    position: relative;
+    top: 10%;
+    right:0%;
+    z-index: 2;
+  }
+
+  .right{
+    margin: 0;
+  }
+
+  .content{
+    margin: 30px 10%;
+  }
+
+  .content h1{
+    text-align: center;
+  }
+
+
+
+
+}
